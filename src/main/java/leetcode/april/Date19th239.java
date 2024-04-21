@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class Date19th239 {
     public int[] maxSlidingWindow(int[] nums, int k) {
-        Queue<Integer> myQueue = new LinkedList<>();
+        Deque<Integer> myQueue = new LinkedList<>();
         int[] result = new int[nums.length - k + 1];
         int maxValue = Arrays.stream(nums).limit(k).max().getAsInt();
         result[0] = maxValue;
@@ -15,11 +15,13 @@ public class Date19th239 {
         for (int i = 0; i < k; i++) {
             int size = myQueue.size();
             for (int j = 0; j < size; j++) {
-                Integer poll = myQueue.poll();
+                Integer poll = myQueue.pollLast();
                 if (poll >= nums[i]) {
                     myQueue.add(poll);
+                    break;
                 }
             }
+
             myQueue.add(nums[i]);
         }
 
@@ -33,9 +35,10 @@ public class Date19th239 {
             } else {
                 int size = myQueue.size();
                 for (int j = 0; j < size; j++) {
-                    Integer poll = myQueue.poll();
+                    Integer poll = myQueue.pollLast();
                     if (poll >= nums[i + k - 1]) {
                         myQueue.add(poll);
+                        break;
                     }
                 }
                 myQueue.add(nums[i + k - 1]);
