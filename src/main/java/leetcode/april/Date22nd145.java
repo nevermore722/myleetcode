@@ -5,8 +5,8 @@ import leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Date22th144 {
-    public List<Integer> preorderTraversal(TreeNode root) {
+public class Date22nd145 {
+    public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> resultList = new ArrayList<>();
         dfs(root, resultList);
         return resultList;
@@ -16,8 +16,9 @@ public class Date22th144 {
         if (cur == null) {
             return;
         }
-        resultList.add(cur.val);
+
         dfs(cur.left, resultList);
         dfs(cur.right, resultList);
+        resultList.add(cur.val);
     }
 }

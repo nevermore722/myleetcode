@@ -2,7 +2,7 @@ package leetcode.april;
 
 import java.util.*;
 
-public class Date21th347 {
+public class Date21st347 {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> numMap = new HashMap<>();
         for (int num : nums) {

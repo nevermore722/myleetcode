@@ -5,7 +5,7 @@ import leetcode.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Date22th94 {
+public class Date22nd94 {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> resultList = new ArrayList<>();
         dfs(root, resultList);
