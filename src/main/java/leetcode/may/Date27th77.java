@@ -1,10 +1,9 @@
 package leetcode.may;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Date25th77 {
+public class Date27th77 {
     List<List<Integer>> result = new ArrayList<>();
 
     public List<List<Integer>> combine(int n, int k) {
@@ -18,7 +17,8 @@ public class Date25th77 {
             result.add(new ArrayList<>(list));
             return;
         }
-        for (int i = startIndex; i < n + 1; i++) {
+        int size = n - (k - list.size()) + 2;
+        for (int i = startIndex; i < size; i++) {
             list.add(i);
             recursion(n, k, i + 1, list);
             list.remove(list.size() - 1);
