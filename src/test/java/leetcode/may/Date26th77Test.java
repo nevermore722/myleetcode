@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-class Date25th77Test {
+class Date26th77Test {
 
     @Test
     void combine() {
