@@ -1,11 +1,10 @@
 package leetcode;
 
+import leetcode.june.Date01st131;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Date01st131Test {
 
