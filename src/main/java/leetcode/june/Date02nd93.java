@@ -10,11 +10,11 @@ public class Date02nd93 {
     public List<String> restoreIpAddresses(String s) {
         int n = s.length();
         str = s;
-        backtrack(0, "", 4, n);
+        backTracking(0, "", 4, n);
         return result;
     }
 
-    private void backtrack(int i, String tmp, int flag, int n) {
+    private void backTracking(int i, String tmp, int flag, int n) {
         if (i == n && flag == 0) {
             result.add(tmp.substring(0, tmp.length() - 1));
             return;
