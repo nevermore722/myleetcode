@@ -25,11 +25,11 @@ public class Date02nd93 {
         for (int j = i; j < i + 3; j++) {
             if (j < n) {
                 if (i == j && str.charAt(j) == '0') {
-                    backtrack(j + 1, tmp + str.charAt(j) + ".", flag - 1, n);
+                    backTracking(j + 1, tmp + str.charAt(j) + ".", flag - 1, n);
                     break;
                 }
                 if (Integer.parseInt(str.substring(i, j + 1)) <= 255) {
-                    backtrack(j + 1, tmp + str.substring(i, j + 1) + ".", flag - 1, n);
+                    backTracking(j + 1, tmp + str.substring(i, j + 1) + ".", flag - 1, n);
                 }
             }
         }
