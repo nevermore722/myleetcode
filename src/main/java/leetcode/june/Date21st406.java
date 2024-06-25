@@ -3,7 +3,7 @@ package leetcode.june;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-public class Date21th406 {
+public class Date21st406 {
     public int[][] reconstructQueue(int[][] people) {
         // 身高从大到小排（身高相同k小的站前面）
         Arrays.sort(people, (a, b) -> {
