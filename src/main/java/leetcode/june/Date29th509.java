@@ -1,6 +1,6 @@
 package leetcode.june;
 
-public class Date28th509 {
+public class Date29th509 {
     public int fib(int n) {
         int[] dp = new int[n + 1];
         if (n == 0) {
