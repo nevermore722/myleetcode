@@ -1,6 +1,6 @@
 package leetcode.july;
 
-public class Date02th62 {
+public class Date02nd62 {
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m + 1][n + 1];
         dp[0][0] = 1;

@@ -1,6 +1,6 @@
 package leetcode.july;
 
-public class Date21th121 {
+public class Date21st121 {
     public int maxProfit(int[] prices) {
         int[][] dp = new int[prices.length][2];
 

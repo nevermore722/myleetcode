@@ -1,6 +1,6 @@
 package leetcode.july;
 
-public class Date01th746 {
+public class Date01st746 {
     public int minCostClimbingStairs(int[] cost) {
         int[] dp = new int[cost.length + 1];
         int topIndex = cost.length;
