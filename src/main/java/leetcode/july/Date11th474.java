@@ -1,6 +1,6 @@
 package leetcode.july;
 
-class Solution {
+public class Date11th474 {
     public int findMaxForm(String[] strs, int m, int n) {
         //dp[i][j]表示i个0和j个1时的最大子集
         int[][] dp = new int[m + 1][n + 1];
