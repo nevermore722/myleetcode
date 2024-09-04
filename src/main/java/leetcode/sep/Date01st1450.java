@@ -1,6 +1,6 @@
 package leetcode.sep;
 
-public class Date1st1450 {
+public class Date01st1450 {
     public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
         int result = 0;
         for (int i = 0; i < startTime.length; i++) {

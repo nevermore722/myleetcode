@@ -1,6 +1,6 @@
 package leetcode.sep;
 
-public class Date2nd2024 {
+public class Date02nd2024 {
     public int maxConsecutiveAnswers(String answerKey, int k) {
         int ans = 0;
         int[] cnt = new int[2];
