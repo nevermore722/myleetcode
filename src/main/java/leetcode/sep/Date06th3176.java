@@ -1,5 +1,7 @@
 package leetcode.sep;
 
+import java.util.Arrays;
+
 public class Date06th3176 {
     public int maximumLength(int[] nums, int k) {
         //dp[i][j]当前nums[i]重复的不超过J的好序列的最大个数
