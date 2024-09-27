@@ -1,6 +1,6 @@
 package leetcode.sep;
 
-public class Date25th2535 {
+public class Date26th2535 {
     public int differenceOfSum(int[] nums) {
         int result = 0;
         for (int i = 0; i < nums.length; i++) {
