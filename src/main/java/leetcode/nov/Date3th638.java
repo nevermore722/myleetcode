@@ -1,5 +1,8 @@
 package leetcode.nov;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Date3th638 {
     public int shoppingOffers(List<Integer> price, List<List<Integer>> special, List<Integer> needs) {
         int n = price.size();
